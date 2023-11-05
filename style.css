@@ -11,8 +11,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    background-color: chartreuse;
+    background-color: rgb(238, 241, 43);
     align-items: center;
+    font-weight: bold;
 }
 
 nav>*:nth-child(2) {
@@ -22,7 +23,7 @@ nav>*:nth-child(2) {
 
 .logo {
     padding-left: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .nav {
@@ -33,6 +34,12 @@ nav>*:nth-child(2) {
 
 .nav>* {
     padding: 1em;
+    cursor: pointer;
+}
+
+.nav>*:hover {
+    background-color: black;
+    color: #2ECDA9FF;
 }
 
 
@@ -40,16 +47,26 @@ nav>*:nth-child(2) {
 
 .heroSec {
     position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay {
     position: absolute;
-    background-color: black;
-    height: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    height: 100%;
+    width: 100%;
 }
 
-.heroSec img {
-    /* object-fit: contain; */
+.slides {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: auto;
+}
+
+.heroSec .img {
     width: 100vw;
     height: 45vw;
 }
