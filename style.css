@@ -11,9 +11,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    background-color: rgb(238, 241, 43);
+    background-color: rgb(4, 26, 9);
     align-items: center;
     font-weight: bold;
+    color: rgb(238, 241, 43);
 }
 
 nav>*:nth-child(2) {
